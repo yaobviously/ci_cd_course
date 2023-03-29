@@ -4,7 +4,8 @@ jobs:
   first-github-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
+      - name: checkout code
+        uses: actions/checkout@v3
       - name: hello
         run: echo "hello github actions!"
       - name: run python script
