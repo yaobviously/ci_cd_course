@@ -4,6 +4,6 @@ jobs:
   first-github-job:
     runs-on: ubuntu-latest
     steps:
-      - name: hello world
+      - name: hello
       - run: |
           echo "hello github actions!"
