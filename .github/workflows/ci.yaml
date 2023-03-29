@@ -4,5 +4,10 @@ jobs:
   first-github-job:
     runs-on: ubuntu-latest
     steps:
+      - uses: action/checkout@v3
       - name: hello
         run: echo "hello github actions!"
+      - name: run python script
+        run: |
+          pip install -r requirements.txt
+          python ci.py
